@@ -7,6 +7,10 @@ class PokemonCard {
         this.isLoading = false;
         this.maxPokemons = 1008; 
 
+        // Add new properties for button movement
+        this.buttonContainer = document.querySelector('.pokemon-button-container');
+        this.maxMove = 10; // Reduced from 20 to 10 pixels for smaller movement range
+        
         this.initializeEventListeners();
     }
 
@@ -18,6 +22,27 @@ class PokemonCard {
                 this.hideCard();
             }
         });
+
+        // Add mouse move listener to whole document
+        document.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+    }
+
+    handleMouseMove(e) {
+        // Get button container position
+        const rect = this.buttonContainer.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        // Calculate distance from mouse to button center
+        const distanceX = e.clientX - centerX;
+        const distanceY = e.clientY - centerY;
+
+        // Calculate movement (closer mouse = more movement)
+        const moveX = (distanceX / window.innerWidth) * this.maxMove;
+        const moveY = (distanceY / window.innerHeight) * this.maxMove;
+
+        // Apply smooth transform
+        this.button.style.transform = `translate(${moveX}px, ${moveY}px)`;
     }
 
     getRandomPokemonId() {

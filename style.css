@@ -245,12 +245,13 @@ main section,
     border: none;
     background: none;
     cursor: pointer;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
     height: 70px;
+    transition: transform 0.2s ease-out; /* Make movement smooth */
+    position: relative; /* For movement */
 }
 
 .pokemon-button img {
