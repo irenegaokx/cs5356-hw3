@@ -66,8 +66,8 @@ main {
 }
 
 .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 50%;
@@ -164,8 +164,8 @@ footer {
     }
 
     .profile-image {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .interests-grid {
