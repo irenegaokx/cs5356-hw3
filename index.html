@@ -8,6 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="gradient-background">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
+                    <stop offset="0%" stop-color="#ffdd00" />
+                    <stop offset="100%" stop-color="#ffdd0000" />
+                </radialGradient>
+                <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                    <stop offset="0%" stop-color="#00ffee" />
+                    <stop offset="100%" stop-color="#00ffee00" />
+                </radialGradient>
+                <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                    <stop offset="0%" stop-color="#ff3ea5" />
+                    <stop offset="100%" stop-color="#ff3ea500" />
+                </radialGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+                <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+                <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite" />
+            </rect>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+                <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
+                <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite" />
+            </rect>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+                <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
+                <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
+                <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
+            </rect>
+        </svg>
+    </div>
     <header>
         <h1>Welcome to Irene's World ✨</h1>
     </header>
@@ -35,6 +71,14 @@
                     <p>Building digital dreams one line at a time</p>
                 </article>
                 <article class="interest-card">
+                    <h3>⛳ Golf</h3>
+                    <p>Finding peace and precision on the green</p>
+                </article>
+                <article class="interest-card">
+                    <h3>⛷️ Skiing</h3>
+                    <p>Gliding through snowy mountains with grace</p>
+                </article>
+                <article class="interest-card">
                     <h3>📚 Learning</h3>
                     <p>Always curious, always growing</p>
                 </article>
@@ -47,7 +91,7 @@
 
         <details class="fun-fact">
             <summary>🎲 Click for a Random Fact About Me!</summary>
-            <p>I once had a dream about a dog that could fly. I woke up and found out that my boyfriend Stephen Chen could fly. I was so happy.</p>
+            <p>I once had a dream about a dog that could fly. I woke up and found out that my roommie Chloe Wang could fly. I was so happy.</p>
         </details>
     </main>
 
