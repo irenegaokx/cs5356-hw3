@@ -100,8 +100,8 @@ main {
 
 .interests-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Always 3 columns */
-    grid-template-rows: repeat(2, 1fr);     /* 2 rows */
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(2, 1fr);  
     gap: 2rem;
     padding: 1rem;
     max-width: 1200px;
@@ -154,7 +154,7 @@ footer {
     }
 
     .interests-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -169,7 +169,7 @@ footer {
     }
 
     .interests-grid {
-        grid-template-columns: 1fr; /* 1 column on small screens */
+        grid-template-columns: 1fr; 
     }
 } 
 
@@ -197,7 +197,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Add these styles at the top of your existing CSS */
 .gradient-background {
     position: fixed;
     top: 0;
@@ -211,10 +210,9 @@ footer {
 .gradient-background svg {
     width: 100%;
     height: 100%;
-    opacity: 0.3; /* Reduced opacity to balance the brighter colors */
+    opacity: 0.3; 
 }
 
-/* Add some backdrop-filter to make content more readable */
 main section, 
 .fun-fact {
     backdrop-filter: blur(10px);
@@ -224,7 +222,6 @@ main section,
     margin-bottom: 2rem;
 }
 
-/* Update media query to handle 6 cards better on medium screens */
 @media (max-width: 1200px) and (min-width: 769px) {
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -250,8 +247,8 @@ main section,
     justify-content: center;
     width: 70px;
     height: 70px;
-    transition: transform 0.2s ease-out; /* Make movement smooth */
-    position: relative; /* For movement */
+    transition: transform 0.2s ease-out; 
+    position: relative; 
 }
 
 .pokemon-button img {
