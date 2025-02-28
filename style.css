@@ -57,7 +57,7 @@ main {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 50%;
     border: 8px solid white;
     box-shadow: 0 4px 15px var(--shadow-color);
     transition: transform 0.3s ease;
