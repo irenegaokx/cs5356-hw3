@@ -44,6 +44,23 @@
             </rect>
         </svg>
     </div>
+    
+    <div class="pokemon-button-container">
+        <button id="pokemonButton" class="pokemon-button" aria-label="Show Pokemon">
+            <img src="./img/gengar.png" alt="Gengar">
+        </button>
+        <div class="tooltip">Click me to see a Pokémon!</div>
+    </div>
+
+    <div id="pokemonCard" class="pokemon-card-container hidden">
+        <div class="pokemon-card">
+            <button class="close-button">×</button>
+            <div id="pokemonContent">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <h1>Welcome to Irene's World ✨</h1>
     </header>
@@ -98,5 +115,7 @@
     <footer>
         <p>Made with 💖 by Irene Gao</p>
     </footer>
+
+    <script src="pokemon.js"></script>
 </body>
 </html>
